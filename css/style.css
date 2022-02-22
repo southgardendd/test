@@ -52,23 +52,22 @@ p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 19px;
 }
 
 .navList li a {
     /* color: #000; */
     color: #fff;
-    float: left;
     margin-right: 20px;
 }
 .navList li a.active {
     color:#6923c5;
-    float: left;
     margin-right: 20px;
 }
 
 .header {
-    padding: 40px 100px 40px;
+    padding: 20px 100px 40px;
+    width: 100%;
+    height: 60px;
     /* background: linear-gradient(180deg, #000, #6923c52a); */
 }
 
@@ -83,7 +82,7 @@ p {
     width: 100%;
     height: 1080px;
     background-repeat: no-repeat;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 /* .ban:hover {
@@ -114,7 +113,6 @@ p {
 .howToPlay {
     width: 900px;
     height: 230px;
-    margin-top: 10px;
     margin: auto;
     border: 1px solid rgba(255, 255, 255, 0.37);
     border-radius: 10px;
