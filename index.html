@@ -12,50 +12,85 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="header">
+    <div class="header sticky-top">
         <ul class="navList">
-            <li><a href="index.html" class="noSelect">Home</a></li>
+            <li><a href="index.html" class="noSelect active">Home</a></li>
             <li><a href="#howto" class="noSelect">How to play?</a></li>
-            <li><a href="#discord" class="noSelect active">Discord</a></li>
-            <li><a href="#discord" class="noSelect">Rules</a></li>
-            <li><a href="#contact" class="noSelect">Contacts</a></li>
+            <li><a href="./rules.html" class="noSelect">Rules</a></li>
+            <li><a href="./contacts.html" class="noSelect">Contacts</a></li>
         </ul>
     </div>
-    <div class="ban">
+    <!-- <div class="ban">
         <div class="bannerText">
             <h1 class="karmaLogo noSelect">Karma Roleplay</h1>
         </div>
-    </div>
-    <!-- <div class="newBanner">
-        <img src="./images/banner.png" alt="">
     </div> -->
+
+    <div id="carouselFade" class="carousel slide carousel-fade noSelect" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/banner.png" class="d-block w-100" alt="Two Running Mans">
+            <div class="carousel-logo">
+                <h1 class="karmaLogo noSelect">Karma Roleplay</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner2.png" class="d-block w-100" alt="Psychopat">
+            <div class="carousel-logo">
+                <h1 class="karmaLogo noSelect">Karma Roleplay</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner3.png" class="d-block w-100" alt="Two cars on race">
+            <div class="carousel-logo">
+                <h1 class="karmaLogo noSelect">Karma Roleplay</h1>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
     <div class="afterBanner">
         <div class="howToPlay noSelect" id="#howto">
             <h2>How to play on Karma Roleplay?</h2>
-            <p>To play on server you need:</p>
+            <h5>To play on server you need:</h5>
             <br/>
             <div class="steps">
-                <p>1. Have a licensed version of GTA V or buy it.</p>
-                <p>2. Download and install FiveM launcher from <a href="https://fivem.net/" target="_blank">cfx.re</a></p>
+                <p>1. Have a licensed version of GTA V or buy it on Steam/Social Club/Epic Launcher.</p>
+                <p>2. Download and install FiveM launcher from <a href="https://fivem.net/" target="_blank">cfx.re</a> official website</p>
                 <p>3. Join to our <a href="https://discord.gg/yourinvite" target="_blank">Discord</a> server and go to the #whitelist channel.</p>
-                <p>4. Wait a bit while the assistants whitelist you.</p>
+                <p>4. Wait a bit while the RP Assistants whitelist you.</p>
                 <br>
                 <div class="ifDone">
                 <p>Already done?</p>
+                <br>
                 <button class="connect">
-                    <a href="https://cfx.re/join/yourserver" class="buttonLink">
+                    <a href="https://cfx.re/join/yourserver" target="_blank">
                         Connect to server
                     </a>
                 </button>
                 </div>
             </div>
         </div>
-        <div class="howToPlay noSelect">
-            <h2>Server rules:</h2>
-            <p>1. Blah blah blah</p>
-            <p>2. Blah blah blah blah blah blah blah blah blah</p>
-            <p>3. RP - blah blah blah blah blah blah blah blah blah blah</p>
-        </div>
+        <!-- <script>
+            window.onscroll = function() {
+                var scrolled = window.pageYOffset || document.documentElement.scrollTop; // Получаем положение скролла
+                if(scrolled !== 0){
+                    document.querySelector('.header').style.opacity = '0.5';
+                    document.querySelector('.header').style.transition = '1s';
+                }else{
+                    document.querySelector('.header').style.opacity = '1';
+                };
+            };
+        </script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </div>
 </body>
 </html>
